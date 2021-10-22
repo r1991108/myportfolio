@@ -91,7 +91,6 @@ body main {
   padding-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  border: 2px solid;
 }
 
 body main section {
@@ -333,6 +332,9 @@ body main div img {
     max-height: 50vw;
   }
   body main.certification div {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
     max-width: 90vw;
   }
   .left {
