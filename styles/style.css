@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #2e0404;
+  font-size: 1rem;
+}
+
+header {
+  background-color: #c4c4c4;
+  width: 100%;
+  padding: 1rem;
+}
+
+P {
+  color: #3f3e3e;
+}
+
+nav {
+  background-color: #6a6565;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+nav ul .sectionTitle {
+  padding-bottom: 0.25rem;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  color: #dddada;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+}
+
+.headerText,
+.sectionTitle {
+  font-size: 1.6rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body main {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: 2px solid;
+}
+
+body main section {
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+}
+
+body main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 100px;
+          flex: 3 1 100px;
+}
+
+body main section.left p {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: justify;
+}
+
+body main section.mid {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 100px;
+          flex: 3 1 100px;
+}
+
+body main section.mid ul {
+  margin: 0.5rem 0;
+}
+
+body main section.mid ul li {
+  color: #3f3e3e;
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding-bottom: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.mid ul li div {
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0.5rem;
+}
+
+body main section.mid ul li div img {
+  height: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section.mid ul li div img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+body main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.right img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-height: 22vw;
+  max-width: 100%;
+  -webkit-box-shadow: 0 10px 10px -5px #555555;
+          box-shadow: 0 10px 10px -5px #555555;
+}
+
+body main section.right img.profile {
+  opacity: 0.8;
+  margin: 0.5rem 0;
+}
+
+body main section.right div {
+  margin-top: 0.2rem;
+}
+
+body main section div h2 {
+  font-size: 1.5rem;
+}
+
+body main div.certification1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 30vw;
+  padding: 1rem;
+}
+
+body main div.certification2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 30vw;
+  padding: 1rem;
+}
+
+body main div.certification3 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 100px;
+          flex: 2 1 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 30vw;
+  padding: 1rem;
+}
+
+body main div img {
+  margin: 1rem 0;
+  -webkit-box-shadow: 0 10px 10px -5px #555555;
+          box-shadow: 0 10px 10px -5px #555555;
+}
+
+.active {
+  color: white;
+}
+
+@media screen and (max-width: 1330px) {
+  main {
+    max-width: 90vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .left {
+    min-width: 80vw;
+    margin-right: 0rem;
+  }
+  .mid {
+    max-width: 500px;
+  }
+  .right {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  body header {
+    padding: 0.3rem 1rem;
+  }
+  body header .headerTitle {
+    font-size: 1.5rem;
+  }
+  body header .headerText {
+    font-size: 1rem;
+  }
+  body nav ul {
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body nav ul li a {
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+  }
+  body main {
+    left: 50%;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body main p {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  body main section {
+    margin: 0 0 1rem 0;
+  }
+  body main section.left p {
+    padding: 0 0.5rem;
+  }
+  body main section h3.sectionTitle {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  body main section.mid ul li div {
+    width: 2rem;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+  }
+  body main section.mid ul li div img {
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+  }
+  body main section.right img {
+    max-height: 50vw;
+  }
+  body main.certification div {
+    max-width: 90vw;
+  }
+  .left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .mid {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .right img {
+    max-height: 40vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
