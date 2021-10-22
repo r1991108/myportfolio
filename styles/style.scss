@@ -74,7 +74,7 @@ body {
     padding-top: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    border: 2px solid;
+    // border: 2px solid;
     // justify-content: center;
 
     section {
@@ -264,6 +264,7 @@ body {
         }
       }
       &.certification div {
+        flex-grow: 0;
         max-width: 90vw;
       }
     }
