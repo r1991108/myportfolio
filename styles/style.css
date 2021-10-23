@@ -334,6 +334,7 @@ body main div img {
   body main.certification div {
     max-width: 85vw;
     padding: 0;
+    margin: 1rem 0;
   }
   body main.certification div h2 {
     font-size: 1.2rem;
