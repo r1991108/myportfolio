@@ -282,13 +282,14 @@ body {
             li,
             li p {
               height: 3rem;
-              width: 15rem;
+              width: 16rem;
+              margin-left: 0.5rem;
             }
             li {
               margin-bottom: 1rem;
               div {
                 img {
-                  margin-right: 2.5rem;
+                  margin-right: 1.25rem;
                   transform: scale(1.2, 1.2);
                 }
               }

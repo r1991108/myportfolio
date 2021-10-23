@@ -371,13 +371,14 @@ body main div img {
   body main section.mid .experience li,
   body main section.mid .experience li p {
     height: 3rem;
-    width: 15rem;
+    width: 16rem;
+    margin-left: 0.5rem;
   }
   body main section.mid .experience li {
     margin-bottom: 1rem;
   }
   body main section.mid .experience li div img {
-    margin-right: 2.5rem;
+    margin-right: 1.25rem;
     -webkit-transform: scale(1.2, 1.2);
             transform: scale(1.2, 1.2);
   }
