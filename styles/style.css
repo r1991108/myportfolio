@@ -361,12 +361,12 @@ body main div img {
             transform: scale(0.7, 0.7);
   }
   body main section.mid ul li p {
-    width: 20rem;
-    font-size: 1.1rem;
+    width: 18rem;
+    font-size: 1rem;
   }
   body main section.mid .experience {
     width: 15rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   body main section.mid .experience li,
   body main section.mid .experience li p {
@@ -375,7 +375,7 @@ body main div img {
     margin-left: 0.5rem;
   }
   body main section.mid .experience li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   body main section.mid .experience li div img {
     margin-right: 1.25rem;
