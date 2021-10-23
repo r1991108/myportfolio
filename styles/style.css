@@ -337,6 +337,12 @@ body main div img {
             flex-grow: 0;
     max-width: 90vw;
   }
+  body main.certification div img {
+    margin-top: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-height: 70rem;
+  }
   .left {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
