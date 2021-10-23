@@ -264,13 +264,16 @@ body {
         }
       }
       &.certification div {
-        flex-grow: 0;
-        max-width: 90vw;
-
+        max-width: 85vw;
+        padding: 0;
+        h2 {
+          font-size: 1.2rem;
+        }
         img {
-          margin-top: 0;
+          // margin-top: 0;
           object-fit: contain;
-          max-height: 70rem;
+          width: 85vw;
+          // max-height: 305.6px;
         }
       }
     }
