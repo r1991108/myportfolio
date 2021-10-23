@@ -19,6 +19,13 @@ h5 {
   font-size: 1rem;
 }
 
+.headerContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
 header {
   background-color: #c4c4c4;
   width: 100%;
@@ -31,6 +38,8 @@ P {
 
 nav {
   background-color: #6a6565;
+  -webkit-box-shadow: 0 10px 10px -5px #555555;
+          box-shadow: 0 10px 10px -5px #555555;
 }
 
 nav ul {
@@ -91,6 +100,9 @@ body main {
   padding-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main section {
@@ -190,6 +202,10 @@ body main section.right img.profile {
 
 body main section.right div {
   margin-top: 0.2rem;
+}
+
+body main div h2 {
+  font-size: 1.5rem;
 }
 
 body main section div h2 {
