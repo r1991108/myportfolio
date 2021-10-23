@@ -266,6 +266,12 @@ body {
       &.certification div {
         flex-grow: 0;
         max-width: 90vw;
+
+        img {
+          margin-top: 0;
+          object-fit: contain;
+          max-height: 70rem;
+        }
       }
     }
   }
