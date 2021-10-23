@@ -262,12 +262,13 @@ body main div.certification3 {
 
 body main div img {
   margin: 1rem 0;
-  -webkit-box-shadow: 0 10px 10px -5px #555555;
-          box-shadow: 0 10px 10px -5px #555555;
+  -webkit-box-shadow: 0 10px 10px -5px #615929;
+          box-shadow: 0 10px 10px -5px #615929;
 }
 
 .active {
-  color: white;
+  color: #fcfddd;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1330px) {

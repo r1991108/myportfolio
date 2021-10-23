@@ -184,13 +184,14 @@ body {
     }
     div img {
       margin: 1rem 0;
-      box-shadow: 0 10px 10px -5px rgb(85, 85, 85);
+      box-shadow: 0 10px 10px -5px rgb(97, 89, 41);
     }
   }
 }
 
 .active {
-  color: white;
+  color: rgb(252, 253, 221);
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1330px) {
