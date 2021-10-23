@@ -338,11 +338,13 @@ body main div img {
   body main section.mid ul li div {
     width: 2rem;
     margin-right: 0rem;
-    margin-left: 0.5rem;
   }
   body main section.mid ul li div img {
     -webkit-transform: scale(0.5, 0.5);
             transform: scale(0.5, 0.5);
+  }
+  body main section.mid ul li p {
+    font-size: 0.95rem;
   }
   body main section.right img {
     max-height: 50vw;
