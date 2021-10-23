@@ -335,16 +335,51 @@ body main div img {
     text-align: center;
     font-size: 1.2rem;
   }
+  body main section.mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main section.mid ul li {
+    height: 2rem;
+  }
   body main section.mid ul li div {
     width: 2rem;
     margin-right: 0rem;
   }
   body main section.mid ul li div img {
-    -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5);
+    height: 1rem;
+    margin-right: 0.5rem;
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
   }
   body main section.mid ul li p {
-    font-size: 0.95rem;
+    width: 20rem;
+    font-size: 1.1rem;
+  }
+  body main section.mid .experience {
+    width: 15rem;
+    margin-top: 1rem;
+  }
+  body main section.mid .experience li,
+  body main section.mid .experience li p {
+    height: 3rem;
+    width: 15rem;
+  }
+  body main section.mid .experience li {
+    margin-bottom: 1rem;
+  }
+  body main section.mid .experience li div img {
+    margin-right: 2.5rem;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
   }
   body main section.right img {
     max-height: 50vw;
