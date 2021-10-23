@@ -332,16 +332,16 @@ body main div img {
     max-height: 50vw;
   }
   body main.certification div {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
     max-width: 90vw;
+  }
+  body main.certification div h2 {
+    color: brown;
   }
   body main.certification div img {
     margin-top: 0;
     -o-object-fit: contain;
        object-fit: contain;
-    max-height: 70rem;
+    max-height: 305.6px;
   }
   .left {
     -webkit-box-ordinal-group: 2;
