@@ -335,13 +335,13 @@ body main div img {
     max-width: 90vw;
   }
   body main.certification div h2 {
-    color: brown;
+    color: #1cc470;
   }
   body main.certification div img {
     margin-top: 0;
     -o-object-fit: contain;
        object-fit: contain;
-    max-height: 305.6px;
+    width: 80vw;
   }
   .left {
     -webkit-box-ordinal-group: 2;
