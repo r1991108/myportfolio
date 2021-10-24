@@ -75,7 +75,7 @@ body {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 90vw;
+    width: 95vw;
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
@@ -97,7 +97,8 @@ body {
           text-align: justify;
         }
       }
-      &.mid {
+      &.mid,
+      &.infoSection {
         flex: 3 1 100px;
         ul {
           margin: 0.5rem 0;
@@ -194,6 +195,7 @@ body {
       padding: 1rem;
     }
     div img {
+      border-radius: 5%;
       margin: 1rem 0;
       box-shadow: 0 10px 10px -5px rgb(97, 89, 41);
     }
