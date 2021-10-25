@@ -1,21 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/try.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Responsive Web Design</h1>
-    <div class="box">
-        <div class="box1">1</div>
-        <div class="box2">2</div>
-        <div class="box3">3</div>
+<html>
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <title>滑动切换示例</title>
+    <style lang="css">
+    .main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .page {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        font-size: 24px;
+    }
+    .page1 {
+        background: red;
+    }
+    .page2 {
+        background: blue;
+    }
+    .page3 {
+        background: green;
+    }
+    .page4 {
+        background: black;
+    }
+    .page5 {
+        background: yellow;
+    }
 
-    </div>
+    .active {
+        display: block;
+        z-index: 10;
+    }
 
-    
-</body>
+    .hide {
+        display: none;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="main" id="main">
+            <div class="page page1 active">this is page1</div>
+            <div class="page page2 hide">this is page2</div>
+            <div class="page page3 hide">this is page3</div>
+            <div class="page page4 hide">this is page4</div>
+            <div class="page page5 hide">this is page5</div>
+        </div>
+    </body>
+    <script>
+    var clientH = document.body.clientHeight // 屏幕高度
+    var y, mY, activeDiv, nextDiv, preDiv
+
+    // 监听触摸开始
+    document.body.addEventListener('touchstart', function(event) {
+        activeDiv = event.target
+        nextDiv = activeDiv.nextElementSibling
+        preDiv = activeDiv.previousElementSibling
+        y = event.touches[0].pageY
+
+        activeDiv.classList.remove('active')
+    })
+
+    // 监听触摸结束
+    document.body.addEventListener('touchend', function(event) {
+        console.log(mY)
+        if(mY > 0) { // 向下滑动
+            if(mY > 100) { // 翻页
+                preDiv.style.transform = 'translate(0, 0)'
+                preDiv.style.transition = '.3s ease'
+            }else { // 还原
+                activeDiv.classList.remove('hide')
+                activeDiv.classList.add('active')
+                preDiv.classList.remove('active')
+                // 回到原处
+                preDiv.style.transform = 'translate(0, -' + clientH + 'px)'
+                preDiv.style.transition = '.3s ease'
+            }
+
+            // 过渡结束后，清除掉style，避免下次动画延迟
+            preDiv.addEventListener('transitionend', function() {
+                activeDiv.style = ''
+                preDiv.style = ''
+
+                if(mY > 100)
+                activeDiv.classList.add('hide')
+                else
+                preDiv.classList.add('hide')
+            })
+        }else { // 向上滑动
+            if(mY < -100 ) { // 翻页
+                nextDiv.style.transform = 'translate(0, 0)'
+                nextDiv.style.transition = '.3s ease'
+            }else { // 还原
+                    activeDiv.classList.remove('hide')
+                    activeDiv.classList.add('active')
+                    nextDiv.classList.remove('active')
+                    // 回到原处
+                    nextDiv.style.transform = 'translate(0, ' + clientH + 'px)'
+                    nextDiv.style.transition = '.3s ease'
+            }
+
+            // 过渡结束后，清除掉style，避免下次动画延迟
+            nextDiv.addEventListener('transitionend', function() {
+                activeDiv.style = ''
+                nextDiv.style = ''
+                if(mY < -100 )
+                    activeDiv.classList.add('hide')
+                else
+                    nextDiv.classList.add('hide')
+                })
+            }
+    })
+
+    // 滑动过程
+    document.body.addEventListener('touchmove', function(event) {
+        mY = event.touches[0].pageY - y
+
+        if(mY > 0) { // 向下滑, 上一个滑块显示，并从顶部跟随手指平移下来
+            preDiv.classList.remove('hide')
+            preDiv.classList.add('active')
+            preDiv.style.transform = 'translate(0, -' + (clientH - mY) + 'px)'
+
+            // 当前滑块变形，更好区分效果
+            activeDiv.style.transform = 'scaleX(' + ((clientH - mY) / clientH) + ')'
+        }else { // 向上滑， 下一个滑块显示，并从底部跟随手指平移上来
+            nextDiv.classList.remove('hide')
+            nextDiv.classList.add('active')
+            nextDiv.style.transform = 'translate(0,' + (clientH + mY) + 'px)'
+
+            // 当前滑块变形，更好区分效果
+            activeDiv.style.transform = 'scaleX(' + ((clientH + mY) / clientH) + ')'
+        }
+    })
+
+    </script>
 </html>
