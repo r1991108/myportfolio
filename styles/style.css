@@ -103,6 +103,9 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main section {
@@ -279,6 +282,15 @@ body main div img {
   margin: 1rem 0;
   -webkit-box-shadow: 0 10px 10px -5px #615929;
           box-shadow: 0 10px 10px -5px #615929;
+}
+
+body main .app {
+  margin: 0.5rem 0;
+}
+
+body main .app a {
+  color: #ed7474;
+  text-decoration: none;
 }
 
 .active {

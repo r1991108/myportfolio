@@ -84,6 +84,7 @@ body {
     padding-right: 1.5rem;
     // border: 2px solid;
     justify-content: center;
+    align-items: center;
 
     section {
       margin-bottom: 2rem;
@@ -199,6 +200,14 @@ body {
       border-radius: 5%;
       margin: 1rem 0;
       box-shadow: 0 10px 10px -5px rgb(97, 89, 41);
+    }
+    .app {
+      margin: 0.5rem 0;
+
+      a {
+        color: rgb(237, 116, 116);
+        text-decoration: none;
+      }
     }
   }
 }
