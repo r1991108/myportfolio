@@ -72,6 +72,10 @@ nav {
 
 body {
   overflow-x: hidden;
+  .practice {
+    display: flex;
+    flex-direction: column;
+  }
   main {
     position: relative;
     left: 50%;
