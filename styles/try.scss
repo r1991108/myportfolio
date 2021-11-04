@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: aqua;
+}
+body {
+  .box {
+    border: 2px solid;
+
+    div {
+      height: 300px;
+      max-width: 10vw;
+      // width: 30px;
+      margin: 1rem;
+    }
+    .box1 {
+      position: sticky;
+      top: 0;
+      background-color: blueviolet;
+    }
+    .box2 {
+      position: sticky;
+      top: 300px;
+      background-color: brown;
+    }
+    .box3 {
+      background-color: green;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    background-color: orange;
+  }
+}

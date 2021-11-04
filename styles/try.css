@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  background-color: aqua;
+}
+
+body .box {
+  border: 2px solid;
+}
+
+body .box div {
+  height: 300px;
+  max-width: 10vw;
+  margin: 1rem;
+}
+
+body .box .box1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: blueviolet;
+}
+
+body .box .box2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 300px;
+  background-color: brown;
+}
+
+body .box .box3 {
+  background-color: green;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    background-color: orange;
+  }
+}
+/*# sourceMappingURL=try.css.map */
